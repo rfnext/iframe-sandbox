@@ -1,9 +1,14 @@
 <h1>iFrame Sandbox</h1>
 
 <form action="/" method="get" autocomplete="on">
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email"><br><br>
+  <label for="frmEmailA">Email</label>
+  <input type="email" name="email" id="frmEmailA" placeholder="name@example.com" required autocomplete="email">
+
+  <!-- note that "emailC" will not be autocompleted -->
+  <label for="frmEmailC">Confirm Email</label>
+  <input type="email" name="emailC" id="frmEmailC" required autocomplete="email"><br><br>
   <label for="password">Password:</label>
-  <input type="text" id="password" name="password"><br><br>
-  <input type="submit">
+
+  <label for="frmPwd">Password</label>
+  <input type="password" name="password" id="password" required autocomplete="current-password">
 </form>
